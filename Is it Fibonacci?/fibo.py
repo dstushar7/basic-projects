@@ -5,9 +5,8 @@ def check_fibonacci(number):
         if(number == second_number or number == first_number):
             print("It's a fibonacci number")
             return None
-        temp = second_number
         second_number = first_number+second_number
-        first_number = temp
+        first_number = second_number-first_number
     print("Not Fibonacci number")
     return None
 
